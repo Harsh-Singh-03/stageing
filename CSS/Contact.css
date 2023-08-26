@@ -1,0 +1,126 @@
+.hero-section-contact{
+    background: #F4F0ED;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 0 100px;
+    padding-bottom: 100px;
+    gap: 40px;
+    padding-top: 250px ;
+    width: calc(100% - 200px);
+}
+.location{
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+    max-height: fit-content;
+    transform: translateY(-60px);
+    overflow: hidden;
+    box-shadow: 0px 4px 13px 0px #EBE6E2;
+}
+.location iframe{
+    width: 100%;
+    min-height: 350px;
+}
+.hero-section-contact .heading{
+    color: #000;
+    text-align: center;
+    font-family: DM Serif Display;
+    font-size: 48px;
+    font-style: italic;
+    max-width: 1000px;
+    font-weight: 400;
+    line-height: 130%; 
+}
+.contact-box{
+    display: flex;
+    gap: 40px;
+}
+.contact-box .basic-info{
+    width: 40%;
+    max-width: 400px;
+    padding: 20px;
+    margin-left: 20px;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    background: #76AB3B;
+    box-shadow: 0px 4px 13px 0px #EBE6E2;
+    color: #fff;
+}
+.basic-info .icon_box{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin: 30px 0;
+}
+.icon_box .icon{
+    min-width: 40px;
+    background: #fff;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+.icon svg{
+    fill: #000;
+    width: 30px;
+    object-fit: contain;
+}
+.icon_box .content p{
+    color: #FFF;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+}
+.form h4{
+    color: #000;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+}
+@media screen and (max-width: 1025px) {
+    .contact-box{
+        flex-direction: column;
+    }
+    .contact-box .basic-info{
+        width: calc(100% - 80px) !important;
+        max-width: none;
+        aspect-ratio: auto;
+    }
+    .location{
+        width: calc(100% - 40px);
+        margin-left: 20px;
+    }
+    .form h4{
+        text-align: center;
+    }
+    .hero-section-contact .heading{
+        font-size: 32px;
+        line-height: 120%;
+    }
+}
+@media screen and (max-width: 950px){
+    .hero-section-contact{
+        padding-top: 50px;
+    }
+}
+@media screen and (max-width: 600px){
+    .hero-section-contact{
+        padding-left: 20px;
+        padding-right: 20px;
+        width: calc(100% - 40px);
+    }
+    .hero-section-contact .heading{
+        font-size: 25px;
+    }
+    .icon_box .content p{
+        font-size: 16px;
+    }
+    .form h4{
+       font-size: 25px;
+    }
+    .contact-box{
+        gap: 30px;
+    }
+}

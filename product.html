@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./CSS/Global.css">
+<link rel="stylesheet" href="./CSS/product.css">
+<link rel="stylesheet" href="./CSS/header.css">
+<body>
+    <div class="website-header">
+        <div class="web_header">
+            <div class="left">
+                <a class="nav-item" href="./" target="_self">Home</a>
+                <a class="nav-item" href="./about.html" target="_self">About</a>
+                <a class="nav-item" href="./banta-jeera.html" target="_self">Banta Jeera</a>
+            </div>
+            <div class="center">
+                <a href="./">
+                    <img src="./Files/logo/brand-logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="right">
+                <a class="nav-item" href="./product.html" target="_self">All Products</a>
+                <a class="nav-item" href="./about.html" target="_self">Careers</a>
+                <a class="nav-item" href="./contact.html" target="_self">Contact</a>
+            </div>
+        </div>
+        <div class="mobile_header">
+            <div class="nav">
+                <i class="fas fa-bars" onclick="togglePopUp()"></i>
+            </div>
+            <div class="brand-logo">
+                <a href="./"><img src="./Files/logo/brand-logo.png" alt="logo"></a>
+            </div>
+        </div>
+        <div id="pop-up-toggle">
+            <i class="fas fa-xmark" id="close" onclick="togglePopUp()"></i>
+            <div class="nav-list">
+                <a href="./" target="_self" class="list">
+                    <p>Home</p>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+                <a href="./about.html" target="_self" class="list">
+                    <p>About</p>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+                <a href="./banta-jeera.html" target="_self" class="list">
+                    <p>Banta Jeera</p>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+                <a href="./product.html" target="_self" class="list">
+                    <p>All Products</p>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+                <a href="./contact.html" target="_self" class="list">
+                    <p>Contact</p>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page-container">
+        <div class="hero-section-product">
+            <h2 class="website-heading">Fizz-tastic Sensation in<br>Every Sip!</h2>
+        </div>
+        <div class="product-list">
+            <div class="tab-list">
+                <div class="tab tab-active" data-id="Beverages" onclick="toggleTab(event)">Beverages</div>
+                <div class="tab" data-id="Namkeens" onclick="toggleTab(event)">Namkeens</div>
+                <div class="tab" data-id="Snacks" onclick="toggleTab(event)">Snacks</div>
+                <div class="tab" data-id="Chips" onclick="toggleTab(event)">Chips</div>
+            </div>
+            <div class="productss" id="products">
+            
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./JS/product.js"></script>
+<script src="./JS/header.js"></script>
+<script src="https://kit.fontawesome.com/c23066f06f.js" crossorigin="anonymous"></script>
+</html>

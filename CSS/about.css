@@ -1,0 +1,235 @@
+.hero-section{
+    background: #F4F0ED;
+    width: calc(100% - 200px);
+    padding: 0 100px;
+    padding-top: 200px;
+    position: relative;
+    /* padding-bottom: 120px; */
+}
+.hero-section h4{
+    color: #000;
+    text-align: center;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 400;
+    padding-bottom: 200px;
+    line-height: 40px; /* 125% */
+}
+.hero-image{
+    width: 80%;
+    left: 10%;
+    bottom: -50%;
+    position: absolute;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 400px;
+}
+.hero-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-row-about{
+    width: calc(100% - 100px);
+    margin: auto;
+    margin-top: 300px;
+}
+.row, .row1{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.row1{
+    margin-bottom: 20px;
+    position: relative;
+    justify-content: space-around;
+}
+
+.row1 .arrow-nav, .row1 .arrow-nav1{
+    position: absolute;
+    z-index: 1;
+    width: 30%;
+    left: 45%;
+    bottom: -10%;
+    height: auto;
+}
+.row1 .arrow-nav1{
+    left: auto;
+    right: 45%;
+}
+.row:nth-child(even){
+    flex-direction: row-reverse;
+}
+.row1:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.row .media{
+    flex: 1;
+}
+.row1 .media{
+    width: 45%;
+}
+.media video{
+    width: 100%;
+    height: auto;
+}
+.row .content{
+    flex: 1;
+}
+.row1 .content{
+    width: max-content;
+}
+.row1 .content h4{
+    color: #000;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 130%;
+}
+.row1 .content h2{
+    color: #000;
+    font-size: 96px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 130%;
+}
+.row .content span, .row1 .content span{
+    color: #000;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 45px; /* 138.889% */
+}
+.content-section{
+    background: #F4F0ED;
+    padding: 50px 100px;
+    margin-top: 40px;
+    width: calc(100% - 200px);
+}
+.content-section p{
+    color: #000;
+    text-align: center;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 40px; /* 125% */
+}
+.grid5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    width: calc(100% - 100px);
+    max-width: calc(100% - 100px);
+    gap: 15px;
+    margin: auto;
+}
+.img-box img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .first-row{
+        margin-top: 20px !important;
+    }
+    .row .content span, .row1 .content span{
+        font-size: 24px;
+        line-height: 140%;
+    }
+}
+@media screen and (max-width: 1025px) {
+    .hero-section{
+        padding-left: 20px ;
+        padding-right: 20px ;
+        width: calc(100% - 40px);
+    }
+    .hero-section h4{
+        font-size: 28px;
+        line-height: 140%;
+    }
+    .hero-image{
+        left: 20px;
+        width: calc(100% - 40px);
+        height: auto;
+        height: 300px;
+        bottom: -160px;
+    }
+    .content-section p{
+        font-size: 24px;
+        line-height: 140%;
+    }
+    .row1 .content h2{
+        font-size: 64px;
+        line-height: 140%;
+    }
+    .row{
+        gap: 30px;
+    }
+    .row1 .content h4{
+        font-size: 32px;
+        line-height: 140%;
+    }
+    .content-section{
+        width: calc(100% - 100px);
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .section-row-about{
+        width: calc(100% - 40px);
+    }
+}
+@media screen and (max-width: 950px) {
+    .hero-section{
+        padding-top: 50px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .hero-section h4{
+        font-size: 24px;
+    }
+    .section-row-about{
+        margin-top: 200px;
+    }
+    .row, .row1{
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+    }
+    .row1{
+        gap: 0px;
+    }
+    .row:nth-child(even), .row1:nth-child(odd){
+        flex-direction: column-reverse;
+    }
+    .content-section{
+        width: calc(100% - 40px);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .row1 .arrow-nav, .row1 .arrow-nav1{
+        display: none;
+    }
+    .content{
+        text-align: center;
+    }
+    .row1 .media{
+        width: 100%;
+    }
+    .grid5{
+        width: calc(100% - 40px);
+        max-width: calc(100% - 40px);
+        gap: 10px;
+    }
+    .row1 .content h2{
+        font-size: 40px;
+    }
+    .row1 .content h4{
+        font-size: 24px;
+    }
+    .row .content span, .row1 .content span{
+        font-size: 18px;
+    }
+    .content-section p{
+        font-size: 18px;
+    }
+}
