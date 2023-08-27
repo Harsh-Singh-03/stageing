@@ -72,7 +72,7 @@
     top: 20px;
 }
 .nav i{
-    font-size: 24px;
+    font-size: 18px;
     color: #000;
 }
 .mobile_header .brand-logo{
@@ -111,7 +111,7 @@
     width: calc(100% - 40px);
     padding: 20px;
     display: flex;
-    font-size: 20px;
+    font-size: 16px;
     justify-content: space-between;
     align-items: center;
     color: #000;
