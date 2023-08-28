@@ -15,14 +15,14 @@
 }
 .footer-nav span{
     font-size: 12px;
-    line-height: 100%;
+    line-height: 140%;
     display: block;
     font-weight: 300;
 }
 .footer-nav p{
     font-size: 18px;
     font-weight: 400;
-    line-height: 100%;
+    line-height: 140%;
 }
 .footer-nav h4{
     font-size: 20px;
@@ -44,7 +44,7 @@
     object-fit: contain;
 }
 .footer-nav .my-2{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .footer-nav .my-1{
     margin-bottom: 10px;
@@ -74,6 +74,7 @@
 @media screen and (max-width: 670px) {
     .website-footer{
         flex-direction: column;
+        gap: 10px;
     }
     .footer-nav{
         gap: 20px;
@@ -82,12 +83,9 @@
     .social-media{
         margin-top: 20px;
     }
-    .footer-nav p{
-        line-height: 120%;
-    }
     .footer-content span{
         display: block;
         font-size: 12px;
-        line-height: 120%;
+        text-decoration: none;
     }
 }

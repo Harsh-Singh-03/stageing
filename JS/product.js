@@ -113,27 +113,34 @@ let Namkeen = [
 ]
 let products = document.getElementById("products");
 let tab = document.querySelectorAll(".tab")
-Bevrage.forEach(data =>{
-    products.innerHTML += `
-    <div class="product-card">
-        <video src="${data.video}" autoplay muted loop playsinline></video>
-        <h4>${data.title}</h4>
-        <p>${data.desc}</p>
-    </div>
-    `
-})
 
-const updateProduct = (id) =>{
-    if(id === "Snacks"){
-        products.innerHTML = ""
-        Snacks.forEach(data =>{
+document.addEventListener("DOMContentLoaded", (event) => {
+    Bevrage.forEach(data =>{
+        setTimeout(() => {
             products.innerHTML += `
             <div class="product-card">
                 <video src="${data.video}" autoplay muted loop playsinline></video>
                 <h4>${data.title}</h4>
                 <p>${data.desc}</p>
             </div>
-            `
+            `       
+        }, 200);
+    })
+});
+
+const updateProduct = (id) =>{
+    if(id === "Snacks"){
+        products.innerHTML = ""
+        Snacks.forEach(data =>{
+            setTimeout(() => {
+                products.innerHTML += `
+                <div class="product-card">
+                    <video src="${data.video}" autoplay muted loop playsinline></video>
+                    <h4>${data.title}</h4>
+                    <p>${data.desc}</p>
+                </div>
+                `
+            }, 200);
         })
     }
     if(id === "Beverages"){
