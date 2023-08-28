@@ -62,10 +62,27 @@
     margin-right: 20px;
     color: #fff;
 }
+.fssai{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.fssai img{
+    height: 50px;
+    width: auto;
+}
+.gridimg img{
+    width: 100%;
+    object-fit: contain;
+    margin-top: 10px;
+}
 @media screen and (max-width: 1025px){
     .footer-nav{
         flex-direction: column;
         align-items: center;
+    }
+    .fssai{
+        justify-content: center;
     }
     .footer-nav .footer-content{
         text-align: center;
@@ -81,7 +98,7 @@
         margin-bottom: 10px;
     }
     .social-media{
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .footer-content span{
         display: block;
